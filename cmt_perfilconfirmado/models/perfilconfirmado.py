@@ -27,10 +27,10 @@ class Perfilconfirmado(models.Model):
 		            record['x_perfilconfirmado'] = "Contratista"
 		        else:
 		            record['x_perfilconfirmado'] = "Ninguno"
-		# Profesional Técnico            
+		# Profesional Tecnico            
 		    elif (self.x_cmt_cualessuactividadprincipal == 20):
 		        if (self.x_cmt_cuentaconpersonalproftec == 30 and self.x_cmt_distribuyepanel == False or self.x_cmt_cuentaconpersonalproftec == 20 and self.x_cmt_distribuyepanel == False or self.x_cmt_cuentaconpersonalproftec == 10 and self.x_cmt_distribuyepanel == False):
-		                record['x_perfilconfirmado'] = "Profesional Técnico"
+		                record['x_perfilconfirmado'] = "Profesional Tecnico"
 		        elif (self.x_cmt_cuentaconpersonalproftec == 30 and self.x_cmt_distribuyepanel == True):
 		                record['x_perfilconfirmado'] = "Contratista"
 		        else:
@@ -41,9 +41,9 @@ class Perfilconfirmado(models.Model):
 		            if (self.x_contr_distripanel == True):
 		                record['x_perfilconfirmado'] = "Contratista"
 		            else:
-		                record['x_perfilconfirmado'] = "Profesional Técnico"    
+		                record['x_perfilconfirmado'] = "Profesional Tecnico"    
 		        else:
-		            record['x_perfilconfirmado'] = "Profesional Técnico"
+		            record['x_perfilconfirmado'] = "Profesional Tecnico"
 		# Distribuidor
 		    elif (self.x_cmt_cualessuactividadprincipal == 60):
 		        if (self.x_cmt_solovendeotmbninstala == 60 and self.x_cmt_cuenta_con_bodegas_o_sucursales==True or self.x_cmt_solovendeotmbninstala == 10 and self.x_cmt_cuenta_con_bodegas_o_sucursales==True):
